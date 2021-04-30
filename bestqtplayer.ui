@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BestQtPlayer</class>
+ <widget class="QMainWindow" name="BestQtPlayer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>510</width>
+    <height>458</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BestQtPlayer</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>510</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+   </widget>
+   <widget class="QMenu" name="menuVideo">
+    <property name="title">
+     <string>Video</string>
+    </property>
+    <addaction name="actionSkip_Backward"/>
+    <addaction name="actionSeek_Backward"/>
+    <addaction name="actionPlay"/>
+    <addaction name="actionPause"/>
+    <addaction name="actionStop"/>
+    <addaction name="actionSeek_Forward"/>
+    <addaction name="actionSkip_Forward"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuVideo"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpen"/>
+   <addaction name="separator"/>
+   <addaction name="actionSkip_Backward"/>
+   <addaction name="actionSeek_Backward"/>
+   <addaction name="actionPlay"/>
+   <addaction name="actionPause"/>
+   <addaction name="actionStop"/>
+   <addaction name="actionSeek_Forward"/>
+   <addaction name="actionSkip_Forward"/>
+  </widget>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/resources/open-icon.png</normaloff>:/resources/open-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="toolTip">
+    <string>Open File</string>
+   </property>
+  </action>
+  <action name="actionSkip_Backward">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/resources/skip-backward-icon.png</normaloff>:/resources/skip-backward-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Skip Backward</string>
+   </property>
+   <property name="toolTip">
+    <string>Skip Backward</string>
+   </property>
+  </action>
+  <action name="actionSeek_Backward">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/resources/seek-backward-icon.png</normaloff>:/resources/seek-backward-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Seek Backward</string>
+   </property>
+   <property name="toolTip">
+    <string>Seek Forward</string>
+   </property>
+  </action>
+  <action name="actionPlay">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/resources/start-icon.png</normaloff>:/resources/start-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Play</string>
+   </property>
+   <property name="toolTip">
+    <string>Play</string>
+   </property>
+  </action>
+  <action name="actionPause">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/resources/pause-icon.png</normaloff>:/resources/pause-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pause</string>
+   </property>
+   <property name="toolTip">
+    <string>Pause</string>
+   </property>
+  </action>
+  <action name="actionStop">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/resources/stop-icon.png</normaloff>:/resources/stop-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Stop</string>
+   </property>
+   <property name="toolTip">
+    <string>Stop</string>
+   </property>
+  </action>
+  <action name="actionSeek_Forward">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/resources/seek-forward-icon.png</normaloff>:/resources/seek-forward-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Seek Forward</string>
+   </property>
+   <property name="toolTip">
+    <string>Seek Forward</string>
+   </property>
+  </action>
+  <action name="actionSkip_Forward">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/resources/skip-forward-icon.png</normaloff>:/resources/skip-forward-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Skip Forward</string>
+   </property>
+   <property name="toolTip">
+    <string>Skip Forward</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
